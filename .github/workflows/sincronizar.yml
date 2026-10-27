@@ -1,5 +1,5 @@
 # Botón "Sincronizar sesiones" de la página: esta corrida no hace nada por sí misma.
-# mini consulta cada 2 minutos si hubo una corrida nueva y, si la hay, sincroniza y publica.
+# mini consulta cada hora si hubo una corrida nueva y, si la hay, sincroniza y publica.
 name: Sincronizar
 on: workflow_dispatch
 permissions: {}
@@ -7,4 +7,4 @@ jobs:
   pedido:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Pedido registrado. mini sincroniza en menos de 2 minutos y la página se actualiza al rato."
+      - run: echo "Pedido registrado. mini lo revisa una vez por hora: sincroniza y la página se actualiza en la hora siguiente."
