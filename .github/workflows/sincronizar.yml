@@ -7,4 +7,4 @@ jobs:
   pedido:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Pedido registrado. mini lo revisa una vez por hora: sincroniza y la página se actualiza en la hora siguiente."
+      - run: echo "Pedido registrado. mini lo revisa una vez por hora, sincroniza y la página se actualiza en la hora siguiente."
